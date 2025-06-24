@@ -1,2 +1,37 @@
 
 /* Your CSS Code here. */
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	max-width: 400px;
+	margin: auto;
+	border: 1px dashed teal;
+	padding: 20px;
+}
+
+input,select {
+	padding: 7px;
+	outline: none;
+	border: 2px solid teal;
+	border-radius: 4px;
+}
+input:focus:not(input[type="submit"]) {
+	border-width: 4px;
+}
+input[type="submit"] {
+	background-color: teal;
+	color: white;
+}
+input[type="submit"]:active {
+	scale: 0.9;
+	transition: all 0.5s ease;
+}
+select {
+	width: fit-content;
+	text-align: center;
+	text-transform: capitalize;
+}
+input[type="checkbox"] {
+	scale:1.5;
+}
